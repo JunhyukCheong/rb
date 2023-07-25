@@ -5,6 +5,46 @@
 <title>Royal Black 성남FC 팬커뮤니티</title>
 <link href='http://fonts.googleapis.com/css?family=Ubuntu+Condensed' rel='stylesheet' type='text/css'/>
 <link href="css/styles.css" rel="stylesheet" type="text/css" />
+<style>
+  .forum-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+  }
+  .forum-post {
+    border: 1px solid black;
+    padding: 20px;
+    margin-bottom: 20px;
+    color:black;
+  }
+  .forum-post h2 {
+    font-size: 20px;
+    margin-bottom: 10px;
+  }
+  .forum-post p {
+    margin-bottom: 0;
+  }
+  .pagination a {
+    display: inline-block;
+    margin: 5px;
+    padding: 5px 10px;
+    text-decoration: none;
+    color: #000000;
+    border: 1px solid #000000;
+    border-radius: 5px;
+  }
+  .pagination .active {
+    background-color: #000000;
+    color: #fff;
+  }
+  .forum-title {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 10px;
+    text-align: center;
+    color: #000
+  }
+</style>
 </head>
 <body>
 <div class="wrapper">
@@ -32,13 +72,52 @@
   </div>
   <div class="clear"></div>
   <div class="page">
-    <div class="main-banner"><img src="images/banner3.jpg" alt="banner" /></div>
     <div class="clear"></div>
-    <div class="footer-bottom"></div>
+    <div class="forum-container">
+      <!-- 반응형 공지사항 시작 -->
+      <div class="forum-title">공지사항</div>
+      <!-- 아래 코드는 페이지네이션을 시뮬레이션한 예시입니다. -->
+      <div class="forum-post">
+        <h2>공지사항 제목 1</h2>
+        <p class="post-info">
+          [관리자] 작성일시: 2시간 전
+          <span class="post-meta">
+            <i class="fas fa-eye"></i> 조회 50
+            <i class="fas fa-comments"></i> 댓글 3
+          </span>
+        </p>
+      </div>
+      <div class="forum-post">
+        <h2>공지사항 제목 2</h2>
+        <p class="post-info">
+          [관리자] 작성일시: 1일 전
+          <span class="post-meta">
+            <i class="fas fa-eye"></i> 조회 80
+            <i class="fas fa-comments"></i> 댓글 1
+          </span>
+        </p>
+      </div>
+      <!-- Add more announcement posts here -->
+
+      <!-- 반응형 공지사항 끝 -->
+
+      <!-- 페이지네이션 시작 -->
+      <div class="pagination">
+        <a href="#" class="active">1</a>
+        <a href="#">2</a>
+        <a href="#">3</a>
+        <!-- Add more pagination links here -->
+      </div>
+      <!-- 페이지네이션 끝 -->
+    </div>
+  </div>
+  <div class="footer-bottom">
 </div>
 <div class="clear"></div>
-<div class="copyrights">Copyright (c) Royal Black. All Rights Reserved.
+<div class="copyrights"><font color="#ffffff">Copyright (c) Royal Black. All Rights Reserved.
   <div class="copyrights-bottom"></div>
 </div>
+<!-- Font Awesome 아이콘 라이브러리 추가 -->
+<script src="https://kit.fontawesome.com/your-font-awesome-kit.js" crossorigin="anonymous"></script>
 </body>
 </html>

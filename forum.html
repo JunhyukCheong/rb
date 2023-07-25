@@ -5,6 +5,57 @@
 <title>Royal Black 성남FC 팬커뮤니티</title>
 <link href='http://fonts.googleapis.com/css?family=Ubuntu+Condensed' rel='stylesheet' type='text/css'/>
 <link href="css/styles.css" rel="stylesheet" type="text/css" />
+<style>
+  .forum-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+  }
+  .forum-post {
+    border: 1px solid black;
+    padding: 20px;
+    margin-bottom: 20px;
+    color:black;
+  }
+  .forum-post h2 {
+    font-size: 20px;
+    margin-bottom: 10px;
+  }
+  .forum-post p {
+    margin-bottom: 0;
+  }
+  .new-post-button {
+    display: block;
+    width: 200px;
+    margin: 20px auto;
+    padding: 10px;
+    background-color: #000000;
+    color: #fff;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 5px;
+  }
+  .pagination a {
+    display: inline-block;
+    margin: 5px;
+    padding: 5px 10px;
+    text-decoration: none;
+    color: #000000;
+    border: 1px solid #000000;
+    border-radius: 5px;
+  }
+  .pagination .active {
+    background-color: #000000;
+    color: #fff;
+  }
+  .forum-title {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 10px;
+    text-align: center;
+    color: #000
+  }
+</style>
 </head>
 <body>
 <div class="wrapper">
@@ -33,39 +84,63 @@
   <div class="clear"></div>
   <div class="page">
     <div class="clear"></div>
-    <h1>
-        <div class="logo"><font color="#000000">자유게시판</div> 
-    </h1>
-    <center><table width="30000px"><table border="1">
-        <tr>
-            <td>번호</td>
-            <td>제목</td>
-            <td>작성자</td>
-            <td>작성일</td>
-            <td>조회수</td>
-        </tr>
-        <tr>
-            <td>1</td>
-            <td><a href=".\view.html">ㅎㅇ</a></td>
-            <td>김밥</td>
-            <td>21-12-29</td>
-            <td>3</td>
-        </tr>
-        <tr>
-            <td>2</td>
-            <td><a href=".\public\web.html">안녕하셈</a></td>
-            <td>떡볶이</td>
-            <td>21-12-29</td>
-            <td>1</td>
-        </tr>
-    </table>
-    <a href="./write.html">글쓰기</a></center>
-</body>
-<div class="footer-bottom"></div>
+    <div class="forum-container">
+      <!-- 반응형 게시판 시작 -->
+      <div class="forum-title">자유게시판</div>
+      <div class="forum-post">
+        <h2>울다가 웃으면</h2>
+        <p>[작성자1] 작성일시: 2시간 전</p>
+        <span class="recommend"><i class="fas fa-heart"></i> 추천 10</span>
+          <span class="views"><i class="fas fa-eye"></i> 조회 30</span>
+          <span class="comments"><i class="fas fa-comments"></i> 댓글 5</span>
+        </p>
+      </div>
+      <div class="forum-post">
+        <h2>엉덩이에 뿔나</h2>
+        <p>[작성자2] 작성일시: 1일 전</p>
+        <span class="recommend"><i class="fas fa-heart"></i> 추천 5</span>
+          <span class="views"><i class="fas fa-eye"></i> 조회 20</span>
+          <span class="comments"><i class="fas fa-comments"></i> 댓글 2</span>
+        </p>
+      </div>
+      <div class="forum-post">
+        <h2>얼레리꼴레리</h2>
+        <p>[작성자3] 작성일시: 3일 전</p>
+        <span class="recommend"><i class="fas fa-heart"></i> 추천 5</span>
+          <span class="views"><i class="fas fa-eye"></i> 조회 20</span>
+          <span class="comments"><i class="fas fa-comments"></i> 댓글 2</span>
+        </p>
+      </div>
+      <div class="forum-post">
+        <h2>꼴레리 얼레리</h2>
+        <p>[작성자2] 작성일시: 4일 전</p>
+        <span class="recommend"><i class="fas fa-heart"></i> 추천 5</span>
+          <span class="views"><i class="fas fa-eye"></i> 조회 20</span>
+          <span class="comments"><i class="fas fa-comments"></i> 댓글 2</span>
+        </p>
+      </div>
+      <!-- Add more forum posts here -->
+
+      <!-- 반응형 게시판 끝 -->
+      <a href="#" class="new-post-button">새 게시글 작성하기</a>
+
+      <!-- 페이지네이션 시작 -->
+      <div class="pagination">
+        <a href="#" class="active">1</a>
+        <a href="#">2</a>
+        <a href="#">3</a>
+        <!-- Add more pagination links here -->
+      </div>
+      <!-- 페이지네이션 끝 -->
+    </div>
+  </div>
+  <div class="footer-bottom">
 </div>
 <div class="clear"></div>
 <div class="copyrights"><font color="#ffffff">Copyright (c) Royal Black. All Rights Reserved.
   <div class="copyrights-bottom"></div>
 </div>
+<!-- Font Awesome 아이콘 라이브러리 추가 -->
+<script src="https://kit.fontawesome.com/your-font-awesome-kit.js" crossorigin="anonymous"></script>
 </body>
 </html>
